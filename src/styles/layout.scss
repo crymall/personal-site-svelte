@@ -1,7 +1,9 @@
 @import 'src/styles/variables.scss';
 
 :global {
-  // CSS RESET (courtesy of https://meyerweb.com/eric/tools/css/reset/)
+  // CSS RESET 
+  // courtesy of https://meyerweb.com/eric/tools/css/reset/
+  // Button reset courtesy of https://gist.github.com/MoOx/9137295
 
   html, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -45,6 +47,29 @@
     border-collapse: collapse;
     border-spacing: 0;
   }
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+  }
 
   // END RESET
 
@@ -52,6 +77,10 @@
     background-color: $lightgray;
     margin: 0;
     padding: 20px;
+
+    h1 {
+      font-size: 32px;
+    }
 
     p, h1, h2, div, a, button {
       color: $darkgray;
