@@ -1,6 +1,6 @@
 <script>
   import Icon from '../components/icon.svelte'
-  let darkMode = false;
+  let darkMode = true;
 
   const toggleDarkMode = () => {
     darkMode = !darkMode;
@@ -11,8 +11,8 @@
 
 <nav class="topnav">
   <div class="leftside">
-    <a href="/">home</a>
-    <a href="/about">about</a>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
   </div>
   <button on:click={toggleDarkMode}>
     <Icon width="36" height="36" name="lamp" class={darkMode ? 'light-fill' : 'dark-fill'} />

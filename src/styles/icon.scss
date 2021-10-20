@@ -1,9 +1,26 @@
 @import 'src/styles/variables.scss';
 
+svg {
+  border-radius: 3px;
+  padding: 4px;
+
+  transition: background-color 0.2s, fill 0.2s;
+}
+
 .dark-fill {
   fill: $darkgray;
+
+  &:hover {
+    background-color: $darkgray;
+    fill: $lightgray
+  }
 }
 
 .light-fill {
   fill: $lightgray;
+
+  &:hover {
+    background-color: $lightgray;
+    fill: $darkgray
+  }
 }
