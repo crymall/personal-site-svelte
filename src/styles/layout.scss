@@ -1,0 +1,24 @@
+@import 'src/styles/variables.scss';
+
+:global(body) {
+  background-color: $lightgray;
+  color: $darkgray;
+
+  a {
+    color: $darkgray;
+  }
+}
+
+:global(body.dark-mode) {
+  background-color: $darkgray;
+  color: $lightgray;
+
+  a {
+    color: $lightgray;
+  }
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+}
