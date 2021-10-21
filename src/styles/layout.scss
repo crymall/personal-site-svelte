@@ -19,6 +19,7 @@
     h1 {
       font-size: 36px;
       transition: font-size 0.2s;
+      margin-bottom: 20px;
 
       @media (max-width: 600px) {
         font-size: 30px;

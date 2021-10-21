@@ -1,5 +1,5 @@
 <div class="main-content">
-	<h1>Contact Me</h1>
+	<h1>Contact Me.</h1>
 
 	<p>
 		I'm accessible via <a href="https://github.com/crymall" target="_blank">GitHub</a>,
