@@ -4,8 +4,15 @@ svg {
   border-radius: 3px;
   padding: 4px;
   backface-visibility: hidden;
+  height: 30px;
+  width: 30px;
 
-  transition: background-color 0.15s, fill 0.15s;
+  transition: background-color 0.15s, fill 0.15s, height 0.2s, width 0.2s;
+
+  @media (max-width: 600px) {
+    height: 22px;
+    width: 22px;
+  }
 }
 
 .dark-fill {

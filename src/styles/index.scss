@@ -1,24 +1,23 @@
 @import 'src/styles/variables.scss';
 
-.main-content {
-  display: flex;
-  justify-content: space-between;
-}
-
 h1 {
   margin-bottom: 20px;
 }
 
 .me {
+  float: right;
   object-fit: cover;
   border-radius: 50%;
   height: 250px;
-  width: 180px;
+  width: 190px;
   border: 3px outset $darkgray;
-  margin-left: 20px;
+  margin: 0 0 10px 20px;
+  transition: height 0.2s, width 0.2s;
 
   @media (max-width: 600px) {
-    display: none;
+    height: 125px;
+    width: 95px;
+    margin: 0 0 5px 10px;
   }
 }
 

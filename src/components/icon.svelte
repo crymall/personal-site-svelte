@@ -1,7 +1,5 @@
 <script>
     export let name;
-    export let width = "1rem";
-    export let height = "1rem";
     export let focusable = false;
     let icons = [
         {
@@ -21,8 +19,6 @@
 <svg
   class={$$props.class}
   {focusable}
-  {width}
-  {height}
   viewBox="0 0 {displayIcon.box} {displayIcon.box}">{@html displayIcon.svg}</svg>
 
 <style lang='scss'>

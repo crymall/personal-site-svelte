@@ -5,6 +5,7 @@
   html {
     display: flex;
     justify-content: center;
+    height: 90%;
   }
 
   body {
@@ -13,15 +14,28 @@
     padding: 20px;
     width: 1200px;
     max-width: 1200px;
+    min-height: 100%;
 
     h1 {
-      font-size: 32px;
+      font-size: 36px;
+      transition: font-size 0.2s;
+
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
     }
 
     p {
       font-size: 20px;
       line-height: 26px;
       margin: 15px 0px;
+
+      transition: font-size 0.2s;
+
+      @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
 
     p, h1, h2, div, a, button {
@@ -29,13 +43,26 @@
       font-family: 'bitter', 'serif';
     }
 
+    #svelte {
+      min-height: 100%;
+    }
+
     .main-content {
       margin: 40px 40px;
       transition: padding 0.2s;
+      min-height: 70vh;
 
       @media (max-width: 600px) {
         margin: 20px 20px;
       }
+    }
+
+    .topnav {
+      border-bottom: 3px solid $darkgray;
+    }
+
+    footer {
+      border-top: 3px solid $darkgray;
     }
   }
 
@@ -51,7 +78,11 @@
     }
 
     .topnav {
-      border-bottom: 3px solid $lightgray!important;
+      border-bottom: 3px solid $lightgray;
+    }
+
+    footer {
+      border-top: 3px solid $lightgray;
     }
   }
 }
@@ -60,7 +91,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid $darkgray;
   padding: 0 20px 10px 20px;
   transition: padding 0.2s;
 
@@ -80,6 +110,35 @@
 
     &:hover {
       font-style: italic;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  transition: padding 0.2s;
+
+  p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 18px;
+
+    transition: font-size 0.2s;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 }
